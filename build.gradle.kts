@@ -19,10 +19,23 @@ repositories {
 
 
 dependencies {
-	implementation(platform("org.springframework.boot:spring-boot-dependencies:3.1.5"))
+	implementation(platform("org.springframework.boot:spring-boot-dependencies:3.2.0"))
 	implementation("org.springframework.boot:spring-boot-starter")
+	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+
+	// TODO fix problem with version
+	compileOnly("org.projectlombok:lombok:1.18.30")
+
+	runtimeOnly("com.h2database:h2")
+
+	annotationProcessor("org.projectlombok:lombok:1.18.30")
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("com.tngtech.archunit:archunit:1.2.0")
+
+	testCompileOnly("org.projectlombok:lombok:1.18.30")
+	testAnnotationProcessor("org.projectlombok:lombok:1.18.30")
 }
 
 tasks.withType<Test> {
