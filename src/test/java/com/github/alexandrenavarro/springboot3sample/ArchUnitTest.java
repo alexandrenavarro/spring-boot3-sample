@@ -39,7 +39,6 @@ public class ArchUnitTest {
         ArchRuleDefinition.noClasses().should()
                 .dependOnClassesThat().resideInAPackage("com.google.common.*")
                 .check(classes);
-
         // TODO exclude the test of the noClasses
 //        ArchRuleDefinition.noClasses().should()
 //                .beAnnotatedWith(Data.class)
