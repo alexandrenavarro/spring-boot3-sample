@@ -35,6 +35,7 @@ dependencies {
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("com.tngtech.archunit:archunit:1.2.0")
+    //testImplementation("com.tngtech.archunit:archunit-junit5:1.2.0") // Optional to use
 
     testCompileOnly("org.projectlombok:lombok:1.18.30")
     testRuntimeOnly("org.projectlombok:lombok:1.18.30")

@@ -1,4 +1,4 @@
-package com.github.alexandrenavarro.springboot3sample.persistence;
+package com.github.alexandrenavarro.springboot3sample.persistence.model;
 
 
 import jakarta.persistence.Entity;

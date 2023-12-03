@@ -200,7 +200,7 @@
         <!-- Miscellaneous other checks.                   -->
         <!-- See https://checkstyle.org/config_misc.html -->
         <module name="ArrayTypeStyle"/>
-        <module name="FinalParameters"/>  <!-- managed by  activeRecipe("org.openrewrite.java.cleanup.FinalizeMethodArguments")  -->
+        <!--        <module name="FinalParameters"/> Disabled because controversial, managed by  activeRecipe("org.openrewrite.java.cleanup.FinalizeMethodArguments")  &ndash;&gt;-->
         <module name="TodoComment"/>
         <module name="UpperEll"/>  <!-- managed by activeRecipe("org.openrewrite.java.cleanup.UpperCaseLiteralSuffixes") -->
 

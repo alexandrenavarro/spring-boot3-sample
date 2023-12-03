@@ -1,10 +1,13 @@
 package com.github.alexandrenavarro.springboot3sample.service;
 
-import com.github.alexandrenavarro.springboot3sample.persistence.JpaTodo;
-import org.springframework.stereotype.Component;
+import com.github.alexandrenavarro.springboot3sample.persistence.TodoRepository;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
+@AllArgsConstructor
 public final class TodoService {
-    private JpaTodo jpaTodo;
+
+    private final TodoRepository todoRepository;
 
 }
